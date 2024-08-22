@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content />
+    <meta name="author" content />
+    <title>Editar datos</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand"><img class="circular" src="" width="50" />
+                AnymalNest</a>
+        </div>
+    </nav>
+    <header class="masthead bg-tercer text-white text-center">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+            Editar Datos
+        </h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fa-solid fa-shield-dog"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="container" id="login">
+            <div class="row justify-content-center">
+                <form id="formRegistro">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nombres" id="nombres"
+                            aria-describedby="basic-addon1" required oninput="validarInput(this)"/>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Apellidos" id="apellidos"
+                            aria-describedby="basic-addon1" required oninput="validarInput(this)"/>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Correo" id="email"
+                            aria-describedby="basic-addon1" required />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Cedula" id="cedula"
+                            aria-describedby="basic-addon1" required oninput="validarNumerico(this)"/>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control" placeholder="Telefono" id="telefono"
+                            aria-describedby="basic-addon1" required oninput="validarNumerico(this)"/>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="rol" required>
+                            <option value="">Seleccione un rol</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Veterinario">Veterinario</option>
+                            <option value="Secretario">Secretario</option>
+                            <option value="Voluntario">Voluntario</option>
+                            <option value="Padrino">Padrino</option>
+                            <option value="Adoptante">Adoptante</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Contraseña" id="contraseña"
+                            aria-describedby="basic-addon1" required />
+                    </div>
+
+                    <p id="alert" role="alert"></p>
+                    <button class="btn btn-quinto" type="submit">Editar</button>
+                    <a class="btn btn-outline-light" href="usuarios.html">Volver</a>
+                    <br />
+                </form>
+            </div>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fa-solid fa-shield-dog"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+    </header>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; AnymalNest 2024</small>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/script.js"></script>
+    <script src="../js/sesion/editarDatosUsuarios.js"></script>
+    <script>
+        function validarInput(input) {
+            const regex = /^[a-zA-Z\s]*$/;
+            if (!regex.test(input.value)) {
+                input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
+            }
+        }
+    </script>
+    <script>
+        function validarNumerico(input) {
+            const regex = /^[0-9]*$/;
+            if (!regex.test(input.value)) {
+                input.value = input.value.replace(/\D/g, '');
+            }
+        }
+    </script>
+    <!-- <script src="../../js/verificarLogin.js"></script> -->
+</body>
+
+</html>

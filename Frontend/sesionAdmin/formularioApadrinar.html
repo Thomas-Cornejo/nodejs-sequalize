@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Apadrinamiento de Animales</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content />
+    <meta name="author" content />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand"><img class="circular" src="" width="50" />
+                AnymalNest</a>
+        </div>
+    </nav>
+    <header class="masthead bg-tercer text-white text-center">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+            Formulario de Apadrinamiento de Animales
+        </h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fa-solid fa-shield-dog"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+    <div class="container" id="login">
+        <div class="row justify-content-center">
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Información Personal:</legend>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" aria-describedby="basic-addon1"/>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder = "Direccion" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder = "Ciudad" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="estado" name="estado" placeholder = "Estado/Providencia" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" placeholder = "Codigo postal" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder = "Telefono" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder = "Email" aria-describedby="basic-addon1">
+            </div>
+        </fieldset>
+        
+        <fieldset style="text-align: center;">
+            <legend>Información del Hogar:</legend>
+            <label for="tipo_vivienda">Tipo de Vivienda:</label><br>
+            <input type="radio" id="casa" name="tipo_vivienda" value="casa">
+            <label for="casa">Casa</label><br>
+            <input type="radio" id="apartamento" name="tipo_vivienda" value="apartamento">
+            <label for="apartamento">Apartamento</label><br>
+            <input type="radio" id="otro" name="tipo_vivienda" value="otro"><br>
+            
+            <label for="propietario_inquilino">¿Es usted propietario o inquilino?</label>
+            <select id="propietario_inquilino" name="propietario_inquilino">
+                <option value="propietario">Propietario</option>
+                <option value="inquilino">Inquilino</option>
+            </select>
+            
+            <label for="permiso_propietario">Si es inquilino, ¿tiene permiso del propietario para tener mascotas?</label>
+            <input type="radio" id="si_permiso" name="permiso_propietario" value="si">
+            <label for="si_permiso">Sí</label>
+            <input type="radio" id="no_permiso" name="permiso_propietario" value="no">
+            <label for="no_permiso">No</label>
+            
+            <label for="num_personas">¿Cuántas personas viven en su hogar?</label>
+            <div class="input-group mb-3">
+            <input type="number" class="form-control" id="num_adultos" name="num_adultos" placeholder="Adultos" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+            <input type="number" class="form-control" id="num_ninos" name="num_ninos" placeholder="Niños" aria-describedby="basic-addon1">
+            </div>
+            
+            <label for="acuerdo_familia">¿Todos los miembros de la familia están de acuerdo con la adopción de un animal?</label>
+            <input type="radio" id="si_acuerdo" name="acuerdo_familia" value="si">
+            <label for="si_acuerdo">Sí</label>
+            <input type="radio" id="no_acuerdo" name="acuerdo_familia" value="no">
+            <label for="no_acuerdo">No</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Información sobre el apadrinamiento:</legend>
+            
+            <label for="experiencia_mascotas">¿Tiene experiencia previa con mascotas?</label>
+            <select id="experiencia_mascotas" name="experiencia_mascotas">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        
+            <label for="otras_mascotas">¿Tiene otras mascotas actualmente?</label>
+            <select id="otras_mascotas" name="otras_mascotas">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        
+            <label for="cuidados_medicos">¿Está dispuesto a proporcionar cuidados médicos y atención veterinaria regular?</label>
+            <select id="cuidados_medicos" name="cuidados_medicos">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            </fieldset>
+            <br/>
+            <a class="btn btn-outline-light" href="catalogoApadrinar.html">Volver</a>
+        </form>
+        
+        </div>
+    </div>
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+</header>
+<div class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>Copyright &copy; AnymalNest 2024</small>
+    </div>
+</div>
+</body>
+</html>

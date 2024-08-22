@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SolidartyNest - Catalogo de Adopcion</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="../css/vendor.css">
+<link rel="stylesheet" type="text/css" href="../css/styless.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap"
+  rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="sesion.html">Mis
+                    Datos</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="usuarios.html">Gestionar usuarios</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="#portfolio">Catalogo Adopcion</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="catalogoApadrinar.html"></i>Cataologo Apadrinar</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="donaciones.html"></i>Donaciones</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                    onclick="cerrarSesion()"></i> Salir</a></li>
+        </ul>
+    </div>
+</nav>
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
+    aria-labelledby="Search">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="text-primary text-uppercase mb-3">
+          Search
+        </h4>
+        <div class="search-bar border rounded-2 border-dark-subtle">
+          <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
+            <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    
+
+  </header>
+  <section id="foodies" class="my-5">
+    <div class="container my-5 py-5">
+
+      <div class="section-header d-md-flex justify-content-between align-items-center">
+        <h2 class="display-3 fw-normal">Adopta un peludo</h2>
+        <div class="mb-4 mb-md-0">
+          <p class="m-0">
+            <a class="btn btn-quinto" href="adminAnimal/agregarAnimal.html">Agregar</a>
+            <button class="filter-button me-4  active" data-filter="*">TODOS</button>
+            <button class="filter-button me-4 " data-filter=".dog">CANINO</button>
+            <button class="filter-button me-4 " data-filter=".cat">FELINO</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="isotope-container row">
+
+        <div class="item dog col-md-4 col-lg-3 my-4">
+          <div class="card position-relative">
+            <a href="#" class="popup-trigger" data-popup-text="<strong><strong> Edad: </strong></strong> 3 años<br><strong> Raza: </strong> Labrador Retriever<br><strong> Historia: </strong> 
+              Max fue rescatado de un refugio donde pasó sus primeros meses de vida. Es un perro muy activo y le encanta 
+              jugar a buscar la pelota. Max se lleva bien con otros perros y es muy cariñoso con las personas.
+              <br>Enfermedades: Leve artritis, manejada con medicación adecuada.">
+              <img src="../images/dog13.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+          </a>
+            <div class="card-body p-0">
+              <a href="single-product.html">
+                <h3 class="card-title pt-4 m-0">Max</h3>
+              </a>
+              <div class="card-text">
+                <div class="d-flex flex-wrap mt-3">
+                  <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                    <h5 class="text-uppercase m-0">Adoptar</h5>
+                  </a>
+                  <a href="#" class="btn-wishlist px-4 pt-3 ">
+                    <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="item dog col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong><strong> Edad: </strong> </strong>5 años<br><strong><strong> Raza: </strong></strong> Beagle<br><strong><strong> Historia: </strong></strong> Bella fue encontrada deambulando por las calles 
+                y llevada a un refugio. A pesar de su difícil comienzo, es muy afectuosa y le gusta estar rodeada de personas. 
+                Bella disfruta de los paseos largos y tiene un olfato increíble.
+                <br>Enfermedades: Sin enfermedades conocidas.">
+                <img src="../images/dog12.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Bella</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item dog col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 2 años<br><strong> Raza: </strong> Bulldog Francés<br><strong> Historia: </strong> Charlie fue entregado a un refugio 
+                por una familia que ya no podía cuidarlo. Es un perro tranquilo que adora acurrucarse en el sofá. Charlie es perfecto para un hogar 
+                donde pueda recibir mucha atención y cariño.
+                <br>Enfermedades: Tiene alergias alimentarias que requieren una dieta especial.">
+                <img src="../images/dog14.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Charlie">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Charlie</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item dog col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 4 años<br><strong> Raza: </strong> Pastor Alemán<br><strong> Historia: </strong> Tomi fue rescatada de una situación 
+                de maltrato y ha mostrado una increíble capacidad de recuperación. Es muy inteligente y le encanta aprender trucos nuevos. 
+                Tomi necesita un hogar donde pueda ser parte activa de la familia.
+                <br>Enfermedades: Sin enfermedades conocidas">
+                <img src="../images/dog11.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Tomi">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Tomi</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item cat col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 2 años<br><strong> Raza: </strong> Persa<br><strong> Historia: </strong> Moushy fue encontrado en un parque, solo y asustado. 
+                Desde entonces, ha demostrado ser un gato muy cariñoso que disfruta de la compañía humana y de largos periodos de descanso en lugares soleados.
+                <br>Enfermedades: Sin enfermedades conocidas.">
+                <img src="../images/Moushy.png" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Moushy</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item cat col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 3 años<br><strong> Raza: </strong> Siamés<br><strong> Historia: </strong> SWhiskers fue rescatado de un hogar donde no recibía los cuidados adecuados. 
+                Ahora busca una familia que lo mime y le brinde la atención que merece. Es juguetón y muy curioso.
+                <br>Enfermedades: Sin enfermedades conocidas.">
+                <img src="../images/cat13.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Whiskers</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item cat col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 1 año<br><strong> Raza: </strong> Siamés<br><strong> Historia: </strong> Luna fue abandonada en la puerta de un refugio. 
+                Es una gatita muy activa y sociable, a la que le encanta jugar y explorar su entorno. Perfecta para una familia con niños.
+                <br>Enfermedades:  Sin enfermedades conocidas.">
+                <img src="../images/cat15.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Luna</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item cat col-md-4 col-lg-3 my-4">
+            <div class="card position-relative">
+              <a href="#" class="popup-trigger" data-popup-text="<strong> Edad: </strong> 4 años<br><strong> Raza: </strong> Siamés<br><strong> Historia: </strong> Simba vivió en la calle antes de ser rescatado. 
+                A pesar de su pasado, es un gato tranquilo y afectuoso, que disfruta de los mimos y de una buena comida.
+                <br>Enfermedades: Leve artritis, manejada con medicación adecuada.">
+                <img src="../images/cat17.jpeg" class="img-fluid rounded-4" alt="image" title="Haz clic para ver más detalles sobre Moushy">
+            </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0">Max</h3>
+                </a>
+                <div class="card-text">
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="formularioAdoptar.html" class="btn-cart me-3 px-4 pt-3 pb-3">
+                      <h5 class="text-uppercase m-0">Adoptar</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 ">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="insta" class="my-5">
+    <div class="row g-0 py-5">
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta1.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta2.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta3.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta4.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta5.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a href="#">
+          <img src="../images/insta6.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-bottom">
+    <div class="container">
+      <hr class="m-0">
+      <div class="row mt-3">
+        <div class="col-md-6 copyright">
+          <p class="secondary-font">© 2024 SolidartyNest. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="../js/scriptindex/plugin.js"></script>
+  <script src="../js/scriptindex/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".popup-trigger").forEach(trigger => {
+        trigger.addEventListener("click", (event) => {
+            event.preventDefault();
+            const content = trigger.getAttribute("data-popup-text");
+            showPopup("Detalles del animalito", content);
+        });
+    });
+});
+
+function showPopup(title, content) {
+    const popup = document.createElement("div");
+    popup.classList.add("popup");
+    popup.innerHTML = `
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2>${title}</h2>
+            <p>${content}</p>
+        </div>
+    `;
+    document.body.appendChild(popup);
+
+    const closeButton = popup.querySelector(".popup-close");
+    closeButton.addEventListener("click", () => {
+        document.body.removeChild(popup);
+    });
+}
+
+// Estilos para el popup
+const style = document.createElement("style");
+style.innerHTML = `
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    .popup-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        max-width: 400px;
+        width: 80%;
+        position: relative;
+    }
+    .popup-close {
+        position: absolute;
+        color: #ff8a8a;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .popup-content h2 {
+        margin-top: 0;
+    }
+`;
+document.head.appendChild(style);
+
+  </script>
+</body>
+
+</html>

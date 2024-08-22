@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles1.css">
+    <title>Login AnymalNest</title>
+</head>
+<body id="page-top">
+    <header class="masthead bg-primary text-white text-center">
+    <div class="container" id="login">
+        <div class="form-container" id="login">
+            <form id="formRecuperar">
+                <h1>Cambiar contraseña</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Ingrese su email y su nueva contraseña</span>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Contraseña" id="contraseña"
+                        type="password" aria-describedby="basic-addon1">
+                </div>
+                <p id="alert"></p>
+                <button class="btn btn-primary" type="submit">
+                    Cambiar contraseña
+                </button>
+                <a class="btn btn-outline-light" href="login.html">Iniciar sesion</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Bienvenido, amigo!</h1>
+                    <p>Complete los campos para el cambio de contraseña</p>
+                    <button class="hidden" id="back-to-index" href="../index.html">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <script src="../js/recuperar.js"></script>
+</body>
+</html>
