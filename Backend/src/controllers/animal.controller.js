@@ -110,7 +110,7 @@ export const deleteAnimal = async (req, res) => {
         const { id } = req.params;
         const animal = await Animal.findOne({
             where: {
-                id,
+                id,   
             },
         });
         if (animal.id_imagen) {
@@ -126,3 +126,4 @@ export const deleteAnimal = async (req, res) => {
         return res.status(500).json({ message: error.message });
     }
 };
+console.log("Ignorar");
