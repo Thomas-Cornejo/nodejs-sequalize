@@ -1,10 +1,13 @@
 import Sequelize from "sequelize";
-
-
-const DB_NAME = "fundaciondb"
-const DB_USER = "root"
-const DB_PASSWORD = ""    
-export const sequelize = new Sequelize('fundaciondb', 'root', '',{
-  host: "localhost",
+import { 
+  DB_HOST,
+  DB_PORT,
+  DB_USER,
+  DB_PASSWORD,
+  DB_DATABASE
+} from "../config.js"
+export const sequelize = new Sequelize(DB_DATABASE, DB_USER,DB_PASSWORD,{
+  host: DB_HOST,
+  port: DB_PORT,
   dialect: "mysql",
 });
