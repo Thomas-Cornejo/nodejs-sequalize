@@ -67,7 +67,7 @@ export const updateUser = async (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 };
-
+console.log("prueba de commit")
 export const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
