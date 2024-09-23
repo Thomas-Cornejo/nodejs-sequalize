@@ -1,5 +1,5 @@
 import { Usuario } from "../models/usuario.js";
-
+console.log("first commit")
 
 export const getUsers = async (req, res) => {
   try {
